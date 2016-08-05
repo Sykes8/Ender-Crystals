@@ -14,17 +14,18 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
-public class BlockPortalTop extends Block {
+public class BlockCrystalizer extends Block 
+{
 
-	public BlockPortalTop() 
+	public BlockCrystalizer() 
 	{
         super(Material.ROCK);
-        setUnlocalizedName("Portal Top");
-        setRegistryName("PortalTop");
+        setUnlocalizedName("Crystalizer");
+        setRegistryName("Crystalizer");
         GameRegistry.register(this);
         GameRegistry.register(new ItemBlock(this), getRegistryName());
 	}
-
+	
 	@SideOnly(Side.CLIENT)
     public void initModel() 
 	{
@@ -33,12 +34,13 @@ public class BlockPortalTop extends Block {
 	
 	public static void setupCrafting()
 	{
-    GameRegistry.addRecipe(new ItemStack(ModBlocks.blockPortalTop), 
-            "OOO",
-            "OFO",
-            "PPP",
+    GameRegistry.addRecipe(new ItemStack(ModBlocks.blockCrystalizer), 
+            "SPS",
+            "UFU",
+            "SUS",
+                  'S', Blocks.STONE,
                   'P', Items.ENDER_PEARL,
-                  'O', Blocks.OBSIDIAN,
-    			  'F', ModBlocks.blockEnderFrame);     
+                  'U', Blocks.FURNACE,
+                  'F', ModBlocks.blockEnderFrame);     
     }
 }
