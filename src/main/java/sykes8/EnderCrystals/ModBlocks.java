@@ -1,8 +1,6 @@
 package sykes8.EnderCrystals;
 
 import sykes8.EnderCrystals.blocks.*;
-//import sykes8.EnderCrystals.blocks.BlockPortalBase;
-//import sykes8.EnderCrystals.blocks.BlockPortalTop;
 import net.minecraftforge.fml.relauncher.Side;
 import net.minecraftforge.fml.relauncher.SideOnly;
 
