@@ -1,6 +1,7 @@
 package sykes8.EnderCrystals.blocks;
 
 import sykes8.EnderCrystals.ModBlocks;
+import sykes8.EnderCrystals.EnderCrystals;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -16,12 +17,13 @@ import net.minecraftforge.fml.relauncher.SideOnly;
 
 public class BlockCrystalizer extends Block 
 {
-
+	
 	public BlockCrystalizer() 
 	{
         super(Material.ROCK);
-        setUnlocalizedName("Crystalizer");
-        setRegistryName("Crystalizer");
+        setUnlocalizedName("crystalizer");
+        setRegistryName("crystalizer");
+        setCreativeTab(EnderCrystals.tabEnderCrystals);
         GameRegistry.register(this);
         GameRegistry.register(new ItemBlock(this), getRegistryName());
 	}
@@ -43,4 +45,5 @@ public class BlockCrystalizer extends Block
                   'U', Blocks.FURNACE,
                   'F', ModBlocks.blockEnderFrame);     
     }
+	
 }

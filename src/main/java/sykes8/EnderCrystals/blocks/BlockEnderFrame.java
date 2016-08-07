@@ -1,6 +1,7 @@
 package sykes8.EnderCrystals.blocks;
 
 import sykes8.EnderCrystals.ModBlocks;
+import sykes8.EnderCrystals.EnderCrystals;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -19,8 +20,9 @@ public class BlockEnderFrame extends Block
 	public BlockEnderFrame() 
 	{
         super(Material.ROCK);
-        setUnlocalizedName("Ender Frame");
-        setRegistryName("EnderFrame");
+        setUnlocalizedName("enderframe");
+        setRegistryName("enderframe");
+        setCreativeTab(EnderCrystals.tabEnderCrystals);
         GameRegistry.register(this);
         GameRegistry.register(new ItemBlock(this), getRegistryName());
 	}

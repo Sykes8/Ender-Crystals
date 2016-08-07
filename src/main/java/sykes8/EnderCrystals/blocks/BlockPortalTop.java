@@ -1,6 +1,7 @@
 package sykes8.EnderCrystals.blocks;
 
 import sykes8.EnderCrystals.ModBlocks;
+import sykes8.EnderCrystals.EnderCrystals;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -19,8 +20,9 @@ public class BlockPortalTop extends Block {
 	public BlockPortalTop() 
 	{
         super(Material.ROCK);
-        setUnlocalizedName("Portal Top");
-        setRegistryName("PortalTop");
+        setUnlocalizedName("portaltop");
+        setRegistryName("portaltop");
+        setCreativeTab(EnderCrystals.tabEnderCrystals);
         GameRegistry.register(this);
         GameRegistry.register(new ItemBlock(this), getRegistryName());
 	}

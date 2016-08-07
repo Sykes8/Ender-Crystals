@@ -1,6 +1,7 @@
 package sykes8.EnderCrystals.blocks;
 
 import sykes8.EnderCrystals.ModBlocks;
+import sykes8.EnderCrystals.EnderCrystals;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.block.model.ModelResourceLocation;
@@ -20,8 +21,9 @@ public class BlockPortalBase extends Block
 	public BlockPortalBase() 
 	{
         super(Material.ROCK);
-        setUnlocalizedName("Portal Base");
-        setRegistryName("PortalBase");
+        setUnlocalizedName("portalbase");
+        setRegistryName("portalbase");
+        setCreativeTab(EnderCrystals.tabEnderCrystals);
         GameRegistry.register(this);
         GameRegistry.register(new ItemBlock(this), getRegistryName());
 	}
